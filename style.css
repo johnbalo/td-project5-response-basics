@@ -1,0 +1,485 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0%;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+section{
+    overflow: auto;
+    width: 100%;
+}
+
+.header{
+    background-color: #4D9AAD;
+    color: white;
+    padding: 0% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header h1{
+    width: 20%;
+}
+
+.menu{
+    padding-top: 1%;
+    width: 60%;
+}
+.menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+.sub-menu{
+    display: none;
+}
+
+
+.profile{
+    padding: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.profile div{
+    width: 45%;
+}
+.profile-note h2{
+    color: #54BAB9;
+    font-weight:bolder;
+    font-size: xx-large;
+    padding-top: 15%;
+}
+.profile-note p{
+    color: #275756;
+    font-size: large;
+    line-height: 30px;
+}
+.profile-picture{
+    border-radius: 10px;
+}
+
+.project{
+    background-color: #EBEBEB;
+    padding-left: 7%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+
+}
+.project-note{
+    padding-bottom: 5%;
+    padding-right: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* padding-top: 5%; */
+
+}
+.project-note a{
+    background-color:#4D9AAD;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    height: 40px;
+    width: 135px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+.project-note h1{
+    color: #54BAB9;
+    font-weight:bolder;
+    font-size: xx-large;
+    width: 40%;
+}
+
+.project-sample{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px;
+}
+.project-sample img{
+    border-radius: 10px;
+}
+
+.main-contact{
+    background-color: #4D9AAD;
+    padding-left: 7%;
+}
+
+.img9{
+    margin-left: 80%;
+    width: 100px;
+    height: 30px;
+}
+.img8{
+    width: 100px;
+    height: 30px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    /* padding-right: 11%; */
+}
+.contact-note{
+    width: 50%;
+}
+.contact-detail{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding-top: 3%;
+}
+.contact-detail a{
+    background-color:#157293;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    height: 40px;
+    width: 135px;
+    text-decoration: none;
+    text-align: center;
+}
+.contact-detail .cm{
+    background-color: white;
+    color:#157293;
+}
+
+
+
+ .footer{
+    text-align: center;
+    background-color: #157293;
+    padding: 3%;
+    color: white;
+    font-weight:bolder;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer .logo img{
+    width: 50px;
+    height: 50px;  
+    padding: 15px;  
+}
+.footer .logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+}
+ 
+
+/* a:hover{
+    background-color:coral;
+    transform:translateX(-5px);
+}
+.cm:hover{
+    background-color: coral;
+    transform: translateX(5px);
+    color: white;
+} */
+
+
+
+@media screen and (max-width: 767px)
+{
+    body
+    {
+        max-width: 767px;
+    }
+    
+    .header
+    {
+        background-color: #4d9AAD;
+        color: white;
+        padding: 0% 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+        .header h1{
+            width: 15%;
+        }
+        .menu{
+            padding-top: 1%;
+            width: 70%;
+        }
+        .menu-list{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        .menu-list li{
+            font-size: 12px;
+        }
+        .menu-list li:nth-child(1){
+            width: 12%;
+        }
+        .menu-list li:nth-child(2){
+            width: 18%;
+        }
+        .menu-list li:nth-child(3){
+            width: 35%;
+        }
+        .menu-list li:nth-child(5){
+            width: 10%;
+    }
+    
+    .profile{
+        padding: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .profile-note h2{
+        padding-top: 3px;
+    }
+    .profile div:nth-child(2){
+        padding-top: 5%;
+    }
+    .profile img{
+        width: 250px;
+        height: 250px;    
+    }
+
+    .project-note{
+        padding-bottom: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .project-note h1{
+        width: 60%;
+    }
+    .profile-note a{
+        width: 30%;
+    
+    }
+    .project-sample{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 250px;
+    }
+    .project-sample img{
+        border-radius: 10px;
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px)
+{
+    body
+    {
+        max-width: 500px;
+    }
+    .menu{
+        display: none;
+    }
+
+
+    .sub-menu{
+        display: block;
+        position: relative;
+        z-index: 1;
+        user-select: none;
+        appearance: none;
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer; 
+    }
+    .sub-menu span{
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background-color: white;
+        border-radius: 6px;
+        z-index: 1;
+        transform-origin: 0 0;
+        transition: 0.4s;
+    }
+    .sub-menu:hover span:nth-child(2) {
+        transform: translateX(10px);
+        background-color: blue;
+    }
+    .sub-menu:hover span:nth-child(1) {
+        transform: translateX(10px);
+        background-color: black;
+    }
+    .sub-menu:hover span:nth-child(3) {
+        transform: translateX(10px);
+        background-color: #4D9AAD;
+    } 
+
+    .profile{
+        padding: 5%;
+        display: block;
+    }
+
+    .profile div{
+        width: 100%;
+    }
+
+    .profile img{
+        width: 250px;
+        height: 250px;
+        padding-left: 20%;
+    }
+
+    .project-note{
+        padding-bottom: 20%;
+        display: block;
+    }
+    
+    .project-note h1{
+        width: 100%;
+    }
+    .project-note a{
+        margin-left: 25%;
+    } 
+
+    .project-sample{
+        display: block;
+        text-align: center;
+    }    
+
+    .project-sample img{
+        border-radius: 10px;
+        width: 320px;
+        height: 320px;
+        padding-bottom: 5%;
+    }
+
+    .contact{
+        padding: 5% 7%;
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: white;
+        padding-right: 11%;
+    }
+    .img9{
+        margin-left: 70%;
+    }
+    .contact-note{
+        width: 100%;
+    }
+    .contact-detail{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (min-width: 768px)
+{
+    body
+    {
+        min-width: 768px;
+    }
+
+    .header{
+        background-color:#4d9AAD;
+        color: white;
+        padding: 0% 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .header h1{
+        width: 20%;
+    }
+    .menu{
+        padding-top: 1%;
+        width: 70%;
+    }
+
+    .profile img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .project-note a{
+        margin-top: 10%;
+        margin-right: 10%;
+    } 
+    .project-sample{
+        grid-template-rows: 250px 250px;
+    }
+
+    .project-sample img{
+        border-radius: 10px;
+        width: 220px;
+        height: 220px;
+    }
+
+    .contact-detail{
+        width: 45%;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    body
+    {
+        min-width: 1024px;
+    }
+
+    .header{
+        padding-right: 5%;
+    }
+    .header h1{
+        width: 20%;
+    }
+    .menu{
+        padding-top: 1%;
+        width: 60%;
+    }
+
+    .profile img{
+        width: 350px;
+        height: 350px;
+    }
+
+    .project-note a{
+        margin-top: 5%;
+        margin-right: 10%;
+    } 
+    .project-sample{
+        grid-template-rows: 350px 350px;
+    }
+
+    .project-sample img{
+        border-radius: 10px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .contact-detail{
+        margin-top: 1%;
+    }
+}

@@ -254,10 +254,10 @@ section{
     .profile div:nth-child(2){
         padding-top: 5%;
     }
-    .profile img{
+     .profile img{
         width: 250px;
         height: 250px;    
-    }
+    } 
 
     .project-note{
         padding-bottom: 5%;
